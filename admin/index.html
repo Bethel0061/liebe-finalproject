@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liebeshände</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images/WhatsApp Image 2024-08-02 at 3.19.34 PM.jpeg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-12 bg-">
+          <nav class="navbar navbar-expand-lg navbar-light bg-success">
+            <div class="flex-fill"></div>
+            <div class="navbar nav">
+              <h5 >Liebeshände</h5>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle text-white"
+                  data-bs-toggle="dropdown "
+                >
+                  <i class="fas fa-user-circle text-white"></i>
+                </a>
+                <ul class="dropdown-menu ">
+                  <li>
+                    <a href="#" class="dropdown-item text-white">User Profile</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item text-white">Logout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-cog text-white"></i></a>
+              </li>
+            </div>
+          </nav>
+
+          <div class="container-fluid mt-3 p-4">
+            <div class="row flex-column flex-lg-row mx-2">
+              <div class="col">
+                <div class="card mb-3" style="background-color: #27496d">
+                  <div class="card-body p-2">
+                    <h6 class="card-title h5 text-white">Volunteer Hours</h6>
+                    <span class="text-white">
+                      <i class="fa-solid fa-hourglass-start"></i>
+                      11,345
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3" style="background-color: #17a589">
+                  <div class="card-body px-2 py-2">
+                    <h3 class="card-title h5 text-white">Impact,</h3>
+                    <span class="text-white">
+                      <i class="fa-solid fa-arrow-up-right-dots"></i>
+                      34,345
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3" style="background-color: #cb4335">
+                  <div class="card-body px-2 py-2">
+                    <h3 class="card-title h5 text-white">Page Views</h3>
+                    <span class="text-white">
+                      <i class="fa-solid fa-users-viewfinder"></i>
+                      122,456
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3" style="background-color: #f4d03f">
+                  <div class="card-body px-2 py-2">
+                    <h3 class="card-title h5 text-white">Volunteer</h3>
+                    <span class="text-white">
+                      <i class="fa-solid fa-shield-heart"></i>
+                      34,312
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4 mx-2 flex-column flex-lg-row">
+              <div class="col">
+                <h2 class="h6 text-white-50">LOCATION</h2>
+                <div class="card mb-3 p-2" style="height: 480px">
+                  <div class="card-body">
+                    <section id="charts" class="charts-section">
+                      <h6>Volunteer Growth Over Time</h6>
+                      <canvas id="volunteerGrowthChart"></canvas>
+                      <small class="text-muted">Local</small>
+                      <div class="progress mb-4 mt-2" style="height: 5px">
+                        <div class="progress-bar bg-warning w-50"></div>
+                      </div>
+                      <small class="text-muted">Internal</small>
+                      <div class="progress mb-4 mt-2" style="height: 5px">
+                        <div class="progress-bar bg-danger w-25"></div>
+                      </div>
+                      <small class="text-muted">Global</small>
+                      <div class="progress mb-4 mt-2" style="height: 5px">
+                        <div class="progress-bar bg-primary w-75"></div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <h2 class="h6 text-white-50">DATA</h2>
+                <div class="card mb-3 p-2" style="height: 480px">
+                  <div class="card-body">
+                    <section id="charts" class="charts-section">
+                      <h6>Activity Participation</h6>
+                      <canvas id="activityParticipationChart"></canvas>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid mt-4 p-4">
+            <div class="row flex-column flex-lg-row mx-2">
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="card-body p-2" style="height: 240px">
+                    <h6 class="card-title h5 text-center">Education Center</h6>
+                    <span class="text-white">
+                      <!-- <img src="images/red-arrow2.png" alt="" width="298px"> -->
+                    </span>
+                    <table class="table">
+                      <tr>
+                        <th style="color: #1916d3">ID</th>
+                        <th style="color: #1916d3">Age Group</th>
+                        <th style="color: #1916d3">Data</th>
+                        <th style="color: #1916d3">Progress</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>20-30</td>
+                        <td>40%</td>
+                        <td>
+                          <i class="fas fa-chart-pie text-success"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>30-40</td>
+                        <td>12%</td>
+                        <td>
+                          <i class="fas fa-chart-bar text-warning"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>10-30</td>
+                        <td>90%</td>
+                        <td>
+                          <i class="fas fa-chart-line text-info"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="card-body p-2" style="height: 240px">
+                    <h6 class="card-title h5 text-center">Healthcare Center</h6>
+                    <span class="text"> </span>
+                    <table class="table">
+                      <tr>
+                        <th style="color: #1916d3">ID</th>
+                        <th style="color: #1916d3">Age Group</th>
+                        <th style="color: #1916d3">Data</th>
+                        <th style="color: #1916d3">Progress</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>3-20</td>
+                        <td>60%</td>
+                        <td>
+                          <i class="fa-solid fa-wheelchair text-info"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>13-33</td>
+                        <td>50%</td>
+                        <td>
+                          <i class="fa-solid fa-heart-pulse text-warning"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>35-60</td>
+                        <td>80%</td>
+                        <td>
+                          <i class="fa-solid fa-capsules text-danger"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="card-body p-2" style="height: 240px">
+                    <h6 class="card-title h5 text-center">Donation</h6>
+                    <span class="text"> </span>
+                    <table class="table">
+                      <tr>
+                        <th style="color: #1916d3">ID</th>
+                        <th style="color: #1916d3"> Location</th>
+                        <th style="color: #1916d3">Data</th>
+                        <th style="color: #1916d3">Progress</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Local</td>
+                        <td>60%</td>
+                        <td>
+                          <i class="fa-solid fa-location-dot text-info"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Internal</td>
+                        <td>70%</td>
+                        <td>
+                          <i class="fa-solid fa-hand-holding-medical text-danger"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Global</td>
+                        <td>90%</td>
+                        <td>
+                          <i class="fa-solid fa-earth-americas text-warning"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center py-4 text-muted">&copy; Copyright 2024</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+      integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

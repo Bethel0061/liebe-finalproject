@@ -1,0 +1,23 @@
+
+  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+*{
+    font-family: "DM Sans", sans-serif
+}
+.charts-section {
+  margin: 40px 0;
+}
+
+.charts-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.charts-section canvas {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+h5 {
+  color: aliceblue;
+  font-family: "DM Sans", sans-serif
+}

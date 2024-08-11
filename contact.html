@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liebeshände</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images/WhatsApp Image 2024-08-02 at 3.19.34 PM.jpeg"
+      type="image/x-icon"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: "DM Sans", sans-serif;
+        background-color: #fff;
+      }
+
+      * {
+        box-sizing: border-box;
+        
+      }
+
+      .bg-img {
+        background-image: url(images/download\ \(4\).png);
+        background-color: #fff;
+        min-height: 680px;
+        float: left;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+      }
+
+      h5{
+        margin-top: 218px;
+        text-align: center;
+        color: #014171;
+      }
+      .container-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      .input-icon {
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        width: 100%;
+      }
+
+      .input-icon i {
+        position: absolute;
+        left: 1rem;
+        color: #888;
+        font-size: 1.2rem;
+      }
+
+      .input-icon input {
+        width: 100%;
+        padding: 0.5rem 0.5rem 0.5rem 2.5rem; 
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        color: #333;
+        background-color: transparent;
+      }
+
+      .input-icon input::placeholder {
+        color: #aaa;
+      }
+
+      .input-icon:hover {
+        border-color: #becd2b;
+        box-shadow: 0 0 5px #becd2b(0, 123, 255, 0.5);
+      }
+
+      .input-icon:hover i {
+        color:#becd2b;
+      }
+      .radio-input {
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        width: 100%;
+      }
+      .radio-input:hover {
+        border-color: #becd2b;
+        box-shadow: 0 0 5px #becd2b(0, 123, 255, 0.5);
+      }
+      .radio-input:hover label {
+        color: #becd2b;
+      }
+      p {
+        padding-right: 50px;
+      }
+      .textarea {
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        width: 100%;
+      }
+      .textarea:hover {
+        border-color:#becd2b;
+        box-shadow: 0 0 5px #becd2b(0, 123, 255, 0.5);
+      }
+      .textarea:hover text {
+        color: #becd2b;
+      }
+      button {
+        background-color: #becd2b;
+        color: white;
+        border-radius: 2px;
+        border: none;
+        padding: 12px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color:#014171 ;
+        color: #fff;
+        border-color: #014171;
+        box-shadow: 0 0 5px #becd2b(0, 123, 255, 0.5);
+      }
+      h5, a{
+        text-decoration: none;
+        color: black;
+      }
+      footer,ul{
+        list-style: none;
+      }
+      footer,ul ,li ,a {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Liebeshände</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="volunteer.html"
+                >Volunteer</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="our-mission.html"
+                >Our Mission</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="container"> -->
+      <div class="bg-img">
+        <div class="h5">
+          <h5>
+            We’d love to hear from you! Please fill out the form below, and
+            we’ll get back to you as soon as possible.
+          </h5>
+        </div>
+
+        <form action="/action_page.php" class="container-form">
+          <div class="input-icon">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="input-icon">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="Your email" />
+          </div>
+          <div class="input-icon">
+            <!-- <i class="fa fa-envelope"></i> -->
+            <select class="country-code">
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+61">🇦🇺 +61</option>
+              <option value="+91">🇮🇳 +91</option>
+              <!-- Add more country codes as needed -->
+            </select>
+            <input type="tel" placeholder="Your Phone Number" />
+          </div>
+
+          <!-- <div class="input-icon"> -->
+          <div class="radio-input">
+            <p>Would like to Volunteer?</p>
+            <label>
+              <input type="radio" name="option" value="yes" />
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="option" value="no" />
+              No
+            </label>
+          </div>
+
+          <div class="textarea">
+            <p>Skillsets or Area of Interests</p>
+            <textarea name="text" id=""></textarea>
+          </div>
+
+          <div class="button">
+            <button type="submit">Apply Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-2 text-center text-md-start">
+            <h3 class="h5">About Liebeshände</h3>
+            <ul class="footer-a">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Board of Directors</a></li>
+              <li><a href="#">Complaints</a></li>
+              <li><a href="#">Accountability</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-2 text-center text-md-start">
+            <h3 class="h5">Support</h3>
+            <ul class="footer-a">
+              <li><a href="#">Why Donate</a></li>
+              <li><a href="#">Ways to Support Liebeshände</a></li>
+              <li><a href="#">Volunteer</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-2 text-center text-md-start">
+            <h3 class="h5">News/ Media</h3>
+            <ul class="footer-a">
+              <li><a href="#">Publications</a></li>
+              <li><a href="#">e-Newsletter</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+              <p>copyright &copy; 2024. All Rights Reserved!</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="social-icons">
+                <i
+                  class="fa-brands fa-facebook ms-3"
+                  style="color: #fff"
+                ></i>
+                <i class="fa-brands fa-youtube ms-3" style="color: #fff"></i>
+                <i
+                  class="fa-brands fa-linkedin ms-3"
+                  style="color: #fff"
+                ></i>
+                <i
+                  class="fa-brands fa-x-twitter ms-3"
+                  style="color: #fff"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

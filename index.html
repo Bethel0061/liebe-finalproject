@@ -23,13 +23,44 @@
       href="images/WhatsApp Image 2024-08-02 at 3.19.34 PM.jpeg"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      h1 {
+        transform: scale();
+      }
+      h5,
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      footer,
+      ul {
+        list-style: none;
+      }
+      footer,
+      ul,
+      li,
+      a {
+        color: white;
+      }
+      .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
   </head>
   <body>
-    <!-- Navgation Section -->
-
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Liebeshände</a>
+        <a class="navbar-brand" href="index.html">Liebeshände</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -67,7 +98,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
+              <a class="nav-link" aria-current="page" href="contact.html"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -76,13 +109,13 @@
 
     <div class="bg-img">
       <header>
-        <h1>Together We Grow</h1>
+        <h1 class="animate__animated animate__zoomIn">Together We Grow</h1>
         <p class="header-p">
           Join us in creating a brighter future for the children. Through
           education, healthcare and fun activities we're committed to making a
           positive impact. Become a part of our caring community today.
         </p>
-        <a href="#" class="btn-div">Learn More</a>
+        <a href="volunteer.html" class="btn-div">Learn More</a>
       </header>
     </div>
 
@@ -139,6 +172,51 @@
         </div>
       </div>
     </div>
+
+    <footer class="p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-2 text-center text-md-start">
+            <h3 class="h5">About Liebeshände</h3>
+            <ul class="footer-a">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Board of Directors</a></li>
+              <li><a href="#">Complaints</a></li>
+              <li><a href="#">Accountability</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-2 text-center text-md-start">
+            <h3 class="h5">Support</h3>
+            <ul class="footer-a">
+              <li><a href="#">Why Donate</a></li>
+              <li><a href="#">Ways to Support Liebeshände</a></li>
+              <li><a href="#">Volunteer</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-2 text-center text-md-start">
+            <h3 class="h5">News/ Media</h3>
+            <ul class="footer-a">
+              <li><a href="#">Publications</a></li>
+              <li><a href="#">e-Newsletter</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+              <p>copyright &copy; 2024. All Rights Reserved!</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="social-icons">
+                <i class="fa-brands fa-facebook ms-3" style="color: #fff"></i>
+                <i class="fa-brands fa-youtube ms-3" style="color: #fff"></i>
+                <i class="fa-brands fa-linkedin ms-3" style="color: #fff"></i>
+                <i class="fa-brands fa-x-twitter ms-3" style="color: #fff"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -39,21 +39,22 @@ ul li a:hover {
   transition: 0.6s;
 }
 .btn-div {
-  background-color: #014171;
+  /* background-color: #014171; */
   display: block;
   width: 180px;
   height: 40px;
   line-height: 40px;
   text-decoration: none;
-  color: #fff;
+  color: black;
   border-radius: 8px;
   margin: 10px auto;
   margin-top: 24px;
+  border: 1px solid #0f0c0c;
 }
 .bg-img a:hover {
   border-radius: 6px;
-  background-color: #e0e5b6;
-  color: #0f0c0c;
+  background-color: #014171;
+  color: #fff;
   transition: 0.6s;
 }
 .btn-div-a {
@@ -70,8 +71,8 @@ ul li a:hover {
 }
 .btn-div-a:hover {
   border-radius: 6px;
-  background-color: #e0e5b6;
-  color: #0f0c0c;
+  background-color:#014171 ;
+  color: #fff;
   transition: 0.6s;
 }
 .card-p {
@@ -101,8 +102,14 @@ ul li a:hover {
 .our-mission-h3 {
   margin-top: 80px;
   font-weight: normal;
-  line-height: 64px;
+  line-height: 44px;
 }
 .our-goals-title {
   margin: 40px 0;
+}
+.our-impacts-title{
+  margin: 40px 0;
+}
+footer{
+  background-color: #104e7d;
 }
